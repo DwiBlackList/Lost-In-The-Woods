@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49560780f479d104f851c38b49ea4a56, type: 3}
+  m_Name: Dirt
+  m_EditorClassIdentifier: 
+  tileName: Dirt
+  tileSprites:
+  - {fileID: 21300000, guid: da4d237990a566d489237377352953be, type: 3}
+  - {fileID: 21300000, guid: 16c05c88c93e0f04cb024a799b2b52b3, type: 3}

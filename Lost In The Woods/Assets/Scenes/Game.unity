@@ -159,7 +159,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.6637148, g: 0.8962264, b: 0.8920577, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -176,7 +176,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 20
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -200,9 +200,89 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 50, y: 45, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2058870256
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2058870258}
+  - component: {fileID: 2058870257}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2058870257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2058870256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 176418d441fd3ed4d9197f676e5fdc32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tileAtlas: {fileID: 11400000, guid: 92cb8dc9809a4f34b890e210ea0b00c3, type: 2}
+  treeChance: 15
+  minTreeHeight: 4
+  maxTreeHeight: 6
+  tallGrassChance: 2
+  chunkSize: 20
+  worldSize: 100
+  dirtLayerHeight: 5
+  generateCaves: 1
+  surfaceValue: 0.25
+  heightMultiplier: 25
+  heightAddition: 50
+  terrainFreq: 0.04
+  caveFreq: 0.08
+  seed: 0
+  caveNoiseTexture: {fileID: 0}
+  ores:
+  - name: Coal
+    rarity: 0.1
+    size: 0.8
+    maxSpawnHeight: 5
+    spreadTexture: {fileID: 0}
+  - name: Iron
+    rarity: 0.09
+    size: 0.8
+    maxSpawnHeight: 10
+    spreadTexture: {fileID: 0}
+  - name: Gold
+    rarity: 0.2
+    size: 0.9
+    maxSpawnHeight: 25
+    spreadTexture: {fileID: 0}
+  - name: Diamond
+    rarity: 0.8
+    size: 0.93
+    maxSpawnHeight: 30
+    spreadTexture: {fileID: 0}
+--- !u!4 &2058870258
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2058870256}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
